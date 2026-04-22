@@ -1,0 +1,21 @@
++-----------------------+
+       |     <<abstract>>      |
+       |        Animal         |
+       +-----------------------+
+       | - name: String        |
+       | - weight: double      |
+       | - age: int            |
+       +-----------------------+
+       | + getDosage(): double |
+       | + getFeedSchedule():  |
+       +-----------------------+
+            ^      ^      ^
+            |      |      |
+    +-------+      |      +-------+
+    |              |              |
++-------+      +-------+      +-------+
+| Horse |      | Feline|      | Rodent|
++-------+      +-------+      +-------+
+| getDosage() | getDosage() | getDosage() |
+| getFeedS... | getFeedS... | getFeedS... |
++-------+      +-------+      +-------+
